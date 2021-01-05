@@ -1,0 +1,279 @@
+body {
+	background-color: rgb(212, 250, 255);
+	color: rgb(15, 15, 15);
+	font-family: 'Nunito', sans-serif;
+	font-size: 1rem;
+}
+
+header,
+footer {
+	background-color: rgb(71, 182, 197);
+}
+
+section {
+	padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Audiowide', cursive;
+	margin: 0.5rem 0.5rem;
+}
+
+#withPadding {
+	padding-top: 2rem;
+}
+
+p {
+	padding: 0.5rem 1rem;
+	margin: 0;
+	text-align: justify;
+	font-size: 1.1rem;
+}
+
+footer p {
+	font-size: 0.9rem;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+h1,
+h2,
+aside h3,
+footer p {
+	text-align: center;
+}
+
+header img {
+	display: block;
+	margin: 0 auto;
+	max-width: 4rem;
+}
+
+a {
+	color: rgb(230, 69, 69);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+nav ul {
+	text-transform: uppercase;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+nav ul li {
+	text-align: center;
+	padding: 0.5rem 1rem;
+}
+
+nav ul li a {
+	color: rgba(29, 25, 25, 0.7);
+	display: block;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom-color 0.3s ease-in;
+}
+
+nav ul li a:hover {
+	border-bottom-color: rgba(0, 0, 0, 0.6);
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: square;
+}
+
+#currentPage {
+	color: rgb(29, 25, 25);
+	font-weight: 800;
+}
+
+.home-second,
+.disciplines section:nth-child(2),
+.disciplines section:nth-child(4),
+.disciplines section:nth-child(6),
+.video section,
+#contact-maps {
+	color: rgb(243, 243, 243);
+	background-color: rgb(18, 43, 46);
+}
+
+aside {
+	margin: 0rem 1rem;
+	border: double rgb(18, 43, 46);
+}
+
+aside ul {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.modalImages {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.modalImages img,
+video {
+	padding: 0.5rem 1rem;
+	text-align: center;
+	width: 100%;
+}
+
+form {
+	padding: 0;
+	margin: 0 1rem;
+}
+
+input,
+textarea,
+select {
+	width: 100%;
+	padding: 0.5rem;
+	margin: 0.25rem 0 .5rem 0;
+	border: 1px solid rgb(44, 43, 43);
+	border-radius: 2px;
+}
+
+input[type=submit] {
+	background-color: rgb(71, 182, 197);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=checkbox] {
+	width: 5%;
+}
+
+input[type=submit]:hover {
+	font-weight: 700;
+}
+
+#map {
+	height: 400px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+	outline-color: rgb(71, 182, 197);
+}
+
+@media screen and (min-width: 40rem) {
+	aside ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+	}
+}
+
+@media screen and (min-width: 45rem) {
+	.grid-header {
+		grid-area: header;
+	}
+
+	.two-paragraphs p:nth-child(2),
+	.tandem-and-aff section:nth-child(1),
+	#contact-text {
+		grid-area: pirmas;
+	}
+
+	.two-paragraphs p:nth-child(3),
+	.tandem-and-aff section:nth-child(2),
+	#contact-form {
+		grid-area: antras;
+	}
+
+	.three-paragraphs p:nth-child(4),
+	#contact-maps {
+		grid-area: trecias;
+	}
+
+	.two-paragraphs,
+	.tandem-and-aff {
+		display: grid;
+		gap: 10px;
+		grid-template-areas: "header header" "pirmas antras";
+	}
+
+	.three-paragraphs {
+		display: grid;
+		gap: 10px;
+		grid-template-areas: "header header" "pirmas antras" "trecias trecias";
+	}
+
+	.modalImages {
+		flex: 50%;
+		align-content: center;
+		justify-content: center;
+	}
+
+	.modalImages img {
+		width: 50%;
+	}
+
+	video,
+	iframe {
+		width: 75%;
+	}
+
+	#withVideos {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 60rem) {
+	.modalImages {
+		flex: 25%;
+	}
+
+	.modalImages img {
+		width: 25%;
+		height: 15rem;
+	}
+
+	video {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 70rem) {
+	#withAside aside {
+		grid-area: pirmas;
+	}
+
+	aside ul {
+		display: block;
+	}
+
+	#nextToAside {
+		grid-area: antras;
+	}
+
+	#withAside {
+		display: grid;
+		grid-template-columns: 18% 82%;
+		grid-template-areas: "pirmas antras";
+	}
+
+	.modalImages {
+		flex: 20%;
+	}
+
+	.modalImages img {
+		width: 20%;
+	}
+}

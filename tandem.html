@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skydiving || Tandem</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="css/modalImages.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="Skydiwing-logo">
+        <h1>World of Skydiving</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a id="currentPage" href="tandem.html">Tandem jumps</a>
+                </li>
+                <li>
+                    <a href="aff.html">AFF course</a>
+                </li>
+                <li>
+                    <a href="disciplines.html">Disciplines</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Goals</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="video">
+            <h2>Ready for a Tandem jump?</h2>
+            <section>
+                <h3 class="grid-header">Everything you need to know about Tandem jumping</h3>
+                <div class="three-paragraphs">
+                    <section>
+                        <h4 class="grid-header">Intro</h4>
+                        <p>Tandem is the easiest and most common way to experience a skydive. After a short briefing,
+                            you
+                            leave the aircraft attached to an instructor. You will then experience an approximately
+                            30sec of wonderful
+                            freefall, after which he will open the parachute and brings you to a safe landing while you
+                            enjoy the wonderful view during descent under parachute.
+                            After a short briefing instructor may also be willing to let you control the parashute
+                            during the descent.
+                            The descent itself takes about 2-3 minutes.
+                        </p>
+                    </section>
+                    <section>
+                        <h4>Description</h4>
+                        <p>Tandem skydiving is a very popular training method for first time skydivers, but it is more
+                            expensive than a static line. It exposes first-time jumpers to skydiving with minimal
+                            expectations from the student. The training may consist of many of the activities performed
+                            by
+                            any skydiving student, for example, how to exit the aircraft, how to do maneuvers in
+                            freefall,
+                            and how to deploy the main canopy themselves. However, the tandem master remains primarily
+                            responsible for safe and timely [parachute] deployment. Tandem skydiving is very safe, with
+                            a
+                            student fatality rate of one per 500,000 tandem jumps over the past ten years</p>
+                    </section>
+                    <section>
+                        <h4>Requirements</h4>
+                        <ul>
+                            <li>
+                                Minimum age 12, max weight 95kg.
+                            </li>
+                            <li>
+                                Over the age of 75, a medical certificate is required.
+                            </li>
+                            <li>
+                                Ask your local dropzone the possibilities in case you have personal disabilities.
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <section id="WithImages">
+                    <h4>Photos</h4>
+                    <div class="modalImages">
+                        <img id="Tandem1" class="expandableImages" onclick="ModalFunction(this)"
+                            src="img/tandem/Tandem1.jpeg" alt="Tandem1">
+                        <img id="Tandem2" class="expandableImages" onclick="ModalFunction(this)"
+                            src="img/tandem/Tandem2.jpeg" alt="Tandem2">
+                        <img id="Tandem3" class="expandableImages" onclick="ModalFunction(this)"
+                            src="img/tandem/Tandem3.jpg" alt="Tandem3">
+                    </div>
+                </section>
+            </section>
+        </article>
+        <article>
+            <h2>Antwerp Tandem jumping</h2>
+            <section id="withVideos">
+                <h3>Crazy experience!</h3>
+                <video controls>
+                    <source src="videos/video1.mp4" type="video/mp4">
+                </video>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Information website provided <em>Skydive Antwerp</em></p>
+        <p>Copyright pictures &copy;<em><a href="http://www.skydive-antwerp.com">Skydive Antwerp</a></em> and <em>Bruno
+                Brokken</em></p>
+        <p><time datetime="2020">2020</time></p>
+    </footer>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+        <div id="caption"></div>
+    </div>
+    <script src="js/modalImages.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Skydiving || Goals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="Skydiwing-logo">
+        <h1>World of Skydiving</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="tandem.html">Tandem jumps</a>
+                </li>
+                <li>
+                    <a href="aff.html">AFF course</a>
+                </li>
+                <li>
+                    <a href="disciplines.html">Disciplines</a>
+                </li>
+                <li>
+                    <a id="currentPage" href="contacts.html">Goals</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="three-paragraphs">
+            <h2 class="grid-header">Goals</h2>
+            <section id="contact-text">
+                <h3>Our mindset</h3>
+                <p>
+                    Skydiving: it's the original badass sport. When you make that first jump from thousands of feet
+                    (sending your awesome-ometer through the roof in the process), you want to make more of a statement
+                    than a simple thrilled scream, right?
+                </p>
+                <p>
+                    Our goal is to expand the boundaries of the sport by inviting people
+                    from all around the world to join us.
+                </p>
+                <p>We trully hope that more and more people would see this sport not only
+                    as a one time <q>crazy experience</q> (which of course it is), but also
+                    as an activity, that might very well change your life.
+                </p>
+                <p>We are more than welcome to hear from you what you think about skydving!
+                    Maybe you are just a begginer who is just getting into the sport or maybe
+                    you are already a profesional, looking for like-minded people.
+                    Either way, don't be discouraged and contact us!
+                </p>
+            </section>
+            <section id="contact-form">
+                <h3>Let us know about you</h3>
+                <form>
+                    <label for="name">Name and surname*:</label>
+                    <input id="name" type="text" maxlength="32" placeholder="Name and surname" required>
+                    <label for="email">Email*:</label>
+                    <input id="email" type="text" maxlength="64" placeholder="Email" required>
+                    <label for="phone">Phone number</label>
+                    <input id="phone" type="tel" maxlength="10" placeholder="Phone number">
+                    <label for="exp">How experienced are you?:</label>
+                    <select id="exp">
+                        <option value="0" selected>No experience</option>
+                        <option value="1">Beginner</option>
+                        <option value="2">Intermediate</option>
+                        <option value="3">Experienced</option>
+                        <option value="4">Profesional</option>
+                    </select>
+                    <label for="more">Tell us more about yourself:</label>
+                    <textarea id="more" rows="4" cols="50" required></textarea>
+                    <label for="newsLetter">Subscribe to Newsletter:</label>
+                    <input id="newsLetter" type="checkbox" value="yes">
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+            <section id="contact-maps">
+                <h3>These are our locations!</h3>
+                <div id="map"></div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Information website provided <em>Skydive Antwerp</em></p>
+        <p>Copyright pictures &copy;<em><a href="http://www.skydive-antwerp.com">Skydive Antwerp</a></em> and <em>Bruno
+                Brokken</em></p>
+        <p><time datetime="2020">2020</time></p>
+    </footer>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9dxnqsEmpFO8brKbE5BMn2WxyZJVSsg0&callback=initMap&libraries=&v=weekly"
+        defer></script>
+    <script src="js/maps.js"></script>
+</body>
+
+</html>

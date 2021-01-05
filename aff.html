@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skydiving || AFF</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="css/modalImages.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="Skydiwing-logo">
+        <h1>World of Skydiving</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="tandem.html">Tandem jumps</a>
+                </li>
+                <li>
+                    <a id="currentPage" href="aff.html">AFF course</a>
+                </li>
+                <li>
+                    <a href="disciplines.html">Disciplines</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Goals</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="video">
+            <h2>Believe you have enough experience? Try out the AFF course!</h2>
+            <section>
+                <h3 class="grid-header">Information about AFF courses</h3>
+                <section class="two-paragraphs">
+                    <h4 class="grid-header">Intro</h4>
+                    <p>AFF stands for Accelerated Free Fall. This might be a bit misleading. Skydivers do not accelerate
+                        during free fall, only the first few seconds when leaving the aircraft until terminal velocity
+                        (approximately 200km/h).AFF was introduced quite a while ago as the new standard for a basic
+                        skydive course.</p>
+                    <p> Former skydive courses started with 'automatic opening' jumps (whereby the
+                        openingsystem of the parachute is linked with the aircraft) and a freefall part later during the
+                        course. The AFF program includes free faal as from the first jump ('accelerated' compared with
+                        the old system). There are some small differences in each country or region, but this training
+                        program can be considered as the global standard.</p>
+                </section>
+                <section class="three-paragraphs">
+                    <h4 class="grid-header">Course content</h4>
+                    <p>The AFF course starts with a short day of theoretical instruction. The instruction includes
+                        information about your gear (container/parachute system), normal procedures, non-normal
+                        procedures (i.e; when and how to use the reserve), freefall body position, freefall excersises,
+                        flying under canopy (parachute), landing pattern, landing(flare),... Everything you need to
+                        know. The theoretical course is concluded by a small written test.
+                        When all goes well, and the weather is good, you will do you first jump on the same day!</p>
+                    <p>The practical course consists of 7 levels. Each level is 1 jump. The first three levels you will
+                        be accompanied by two instructors. They assure you keep the correct body position (belly to
+                        earth) and check your predefined excercises. When you executed those exercises correctly while
+                        maintaining the correct body position and keeping altitude awareness, you can proceed to the
+                        next level. As from level 4, only one instructor will be along your side during the freefall.
+                        And yes, you understood well, once you open your parachute (or when you're instructor opened
+                        your parachute should you fail to do so), you're alone under your canopy. No worries, your
+                        instructor will guide you over the radio to your landing spot.</p>
+                    <p>Some people succeed passing the course in 7 jumps. Most likely, a retake on one or more jumps
+                        will be required. However, most people pass the course in less than 10 jumps. A lot depends on
+                        the timeframe of your course. Ideally, you should complete the course over two/three weekends,
+                        which is not always possible due to weather or your own availability. And yes, weather
+                        restrictions are stricter for apprentices (highly regulated remember?).</p>
+                </section>
+                <section>
+                    <h4>Requirements</h4>
+                    <ul>
+                        <li>
+                            Minimum 16 years old (written approval of your parents is required under 18)
+                        </li>
+                        <li>
+                            Medical certificate
+                        </li>
+                    </ul>
+                </section>
+                <section id="WithImages">
+                    <h4>Photos</h4>
+                    <div class="modalImages">
+                        <img id="AFF1" class="expandableImages" onclick="ModalFunction(this)" src="img/aff/AFF1.jpg"
+                            alt="AFF course 1">
+                        <img id="AFF2" class="expandableImages" onclick="ModalFunction(this)" src="img/aff/AFF2.jpg"
+                            alt="AFF course 2">
+                    </div>
+                </section>
+            </section>
+        </article>
+        <article>
+            <h2>AFF course video</h2>
+            <section id="withVideos">
+                <h3>Feeling like a pro in a sky!</h3>
+                <video width="400" controls>
+                    <source src="videos/video2.mp4" type="video/mp4">
+                </video>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Information website provided <em>Skydive Antwerp</em></p>
+        <p>Copyright pictures &copy;<em><a href="http://www.skydive-antwerp.com">Skydive Antwerp</a></em> and <em>Bruno
+                Brokken</em></p>
+        <p><time datetime="2020">2020</time></p>
+    </footer>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+        <div id="caption"></div>
+    </div>
+    <script src="js/modalImages.js"></script>
+</body>
+
+</html>
